@@ -1,0 +1,28 @@
+server:
+  port: 8095
+  servlet:
+    context-path: /weather-provider
+
+openweather:
+  api:
+    url: http://api.openweathermap.org/data/2.5/weather
+    key: 1cdf5202160747e1565f19c1e1276e8e
+
+cloud:
+  aws:
+    region:
+      static: us-east-1
+      auto: false
+    credentials:
+      access-key: AKIAT4P5RIM46BVADUVH
+      secret-key: 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
+    stack:
+      auto: false
+    weather-queue: https://sqs.us-east-2.amazonaws.com/267356554041/weather-persistence-command
+
+logging:
+  level:
+    com:
+      amazonws:
+        util:
+          EC2MetadataUtils: error
