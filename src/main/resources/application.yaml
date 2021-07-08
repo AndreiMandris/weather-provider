@@ -14,8 +14,8 @@ cloud:
       static: us-east-1
       auto: false
     credentials:
-      access-key: AKIAT4P5RIM46BVADUVH
-      secret-key: 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
+      access-key: ENC(AQ90BEl4kjQqnEnwgBcnq+R4lHvrsF9bpHLtpqYfr11pT7PjalOGbpfu5fzazjBUHOPABz6ZlQF9jq1lU1QHQA==)
+      secret-key: ENC(nNMtnKLivIWm2gaxo2/9u4uhrsfpi/Q3OvNNO8aKAgnBLCM8TVe5/6a4jY5clna/4zAR2Li9KymhdAAs0qmK2H6jd3cgrcYF8q0DHt3OxyI=)
     stack:
       auto: false
     weather-queue: https://sqs.us-east-2.amazonaws.com/267356554041/weather-persistence-command
@@ -26,3 +26,6 @@ logging:
       amazonws:
         util:
           EC2MetadataUtils: error
+jasypt:
+  encryptor:
+    password: <INSERT_PASSWORD>

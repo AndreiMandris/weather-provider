@@ -1,6 +1,5 @@
 package com.example.weatherprovider.service;
 
-import com.example.weatherprovider.service.WeatherProvider;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;

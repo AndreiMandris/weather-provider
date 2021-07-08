@@ -2,8 +2,6 @@ package com.example.weatherprovider.service;
 
 import com.example.weatherprovider.api.RequestCommand;
 import com.example.weatherprovider.infrastructure.WeatherPersistenceRequestSender;
-import com.example.weatherprovider.service.DeferredResultManager;
-import com.example.weatherprovider.service.WeatherProvider;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
